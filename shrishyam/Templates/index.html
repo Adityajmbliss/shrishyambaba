@@ -1,0 +1,106 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!-- first section for slider -->
+
+<section id="section-1" class="hero-slider-sec">
+  <div class="main-row">
+    <div class="main-col">
+      <div class="hero-slider">
+        <ul class="slider-hero">
+          <li>
+            <img src='{% static "\image\s1.jpg" %}' alt="banner-slider-1.jpg" />
+          </li>
+          <li>
+            <img src='{% static "\image\s2.jpg" %}' alt="banner-slider-1.jpg" />
+          </li>
+          <li>
+            <img src='{% static "\image\s1.jpg" %}' alt="banner-slider-1.jpg" />
+          </li>
+          <li>
+            <img src='{% static "\image\s2.jpg" %}' alt="banner-slider-1.jpg" />
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- section first ends here -->
+
+<section id="section-2" class="main-service">
+  <div class="main-row">
+      <div class="main-col">
+          <div class="main-ser">
+              
+          </div>
+      </div>
+  </div>
+</section>
+<!-- section of About us -->
+<section class="about">
+  <div class="container">
+    <h1 class="text_in_hone">About Us</h1>
+    <div class="about_sec">
+      <img class="about_img" src="{% static '/image/s1.jpg' %}">
+      <p>The Sri Sri Krishna Balaram Mandir, situated in the Raman Reti area of Vrindavan, holds a special significance for devotees of the International Society for Krishna Consciousness. This grand temple represents the fulfilled dream of Srila Prabhupada, Founder Acharya of ISKCON, who wished to construct a temple of unparalleled beauty for the worship of the transcendental brothers Krishna and Balaram in the same village where They played more than five thousand years ago. Srila Prabhupada directly oversaw all aspects of design and construction and personally called the Lord to come and accept the worship of His devotees from around the world. He said, “Lord Balaram is the source of spiritual strength, and I have built this temple just to give strength to the devotees”.</p>
+    </div>
+   
+  </div>
+</section>
+<!-- end section of About us -->
+<!-- section of video -->
+<section class="recent_videos">
+  <div class="container">
+    <h1 class="text_in_hone_v">Recent Videos</h1>
+  </div>
+  <div class="video_container">
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+    <div class="video_gallery"><img src="{% static '/image/videobg.jpg' %}"></div>
+  </div>
+  <div class="container">
+    <div class="buttons_row_v">
+      <button>Download</button>
+      <button>Newsletter Archive</button>
+    </div>
+  </div>
+</section>
+<!-- end section of video -->
+<!-- section of subcription -->
+<section class="news_sec">
+  <div class="container">
+    <div class="upper">
+      <div class="subs_bg"><img src="{% static '/image/kcontact.jpg' %}"></div>
+      <div class="upper-title">Get to know the latest news about Iskcon Vrindavan with our monthly newsletters.
+        Subscribe now to receive an email every time we release the newsletter.</div>
+      <div class="buttons_row">
+        <button>Download</button>
+        <button>Newsletter Archive</button>
+      </div>
+    </div>
+    <div class="form">
+      <h1 class="text_in_hone">Subscribe to Newsletter</h1>
+      <form action=”mailto:contact@yourdomain.com” method=”POST” enctype=”multipart/form-data” name=”EmailForm”>
+        <div class="for_name">
+          <label for="name" class="name_l">Name :</label>
+          <input type="text" id="name" placeholder="Enter Name" class="name" size="30" required>
+        </div>
+        <div class="for_name">
+          <label for="email" class="name_l">Email :</label>
+          <input type="email" id="email" placeholder="Enter Email" class="email" pattern=".+@globex\.com" size="30"
+            required>
+        </div>
+        <input type="submit" value="Subscribe" class="subscribe_b">
+      </form>
+    </div>
+  </div>
+</section>
+<!-- end section of subcription -->
+{% endblock %}

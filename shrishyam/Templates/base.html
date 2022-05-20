@@ -1,0 +1,75 @@
+{% load static %}
+  <header class="header">
+    <head>       
+        <link rel="stylesheet" href="{% static 'header.css'%}" />
+    </head>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo"><a href="#" class="navbar-logo"><img src="{% static '/image/cropped-logo_sml.png' %}"></a></div>
+            <div id="navbarSupportedContent" class="navbar-item">
+                <ul class="navs-item">
+                    <li class="nav-item "><a href="#" >ISKON </a></li>
+                    <li class="nav-item"><a href="#" >Projects</a></li>
+                    <li class="nav-item"><a href="#" >Visit Vrindavan</a></li>
+                    <li class="nav-item"><a href="#" >Blog</a></li>
+                    <li class="nav-item"><a href="#" >Donate</a></li>
+                    <li class="nav-item"><a href="#" >Festivals</a></li>
+                    <li class="nav-item"><a href="#" >Media</a></li>
+                    <li class="nav-item"><a href="#" >Contact Us</a></li>   
+                </ul>
+            </div>
+        </div>
+    </nav>
+  </header>
+  
+  {% block content %}
+  {% endblock %}
+
+  <footer class="footer">
+    <div class="foot-container">
+        <div class="foot-top">
+            <div class="foot-logo">
+                <a href="#" class="footer-logo"><img src="{% static '/image/cropped-logo_sml.png' %}"></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h3>TIMINGS:</h3>
+                <ul class="social_icon">
+                    <li class="icon_li">Samadhi Arati – 04:10AM</li>
+                    <li class="icon_li">Mangala Arati – 04:30AM</li>
+                    <li class="icon_li">Shringar Arati – 07:15AM</li>
+                    <li class="icon_li">Guru Puja – 07:25AM</li>
+                    <li class="icon_li">Bhagavatam – 08:00AM</li>
+                    <li class="icon_li">Pushpa Arati – 08:30AM</li>
+                    <li class="icon_li">Raj Bhoga Arati – 12:00PM</li>
+                    <li class="icon_li">Temple Closes – 12:45PM</li>
+                    <li class="icon_li">Utthapan Arati – 04:00PM</li>
+                    <li class="icon_li">Sandhaya Arati – 06:30PM</li>
+                    <li class="icon_li">Shayan Arati – 08:00PM</li>
+                    <li class="icon_li">Temple Closes – 08:15PM</li>
+                </ul>
+            </div>
+            <div class="col-2">
+                <h3>CONTACT US:</h3>
+                <ul class="contact">
+                    <li class="contact_li">Contact No: 7060307108</li>
+                    <li class="contact_li">info@iskconvrindavan.com</li>
+                    <li class="contact_li">ISKCON Vrindavan,
+                        Krishna Balaram Mandir
+                        Bhaktivedanta Swami Marg, Raman Reti,
+                        Vrindavan, Uttar Pradesh-281121
+                        India</li>
+                </ul>
+            </div>   
+        </div>
+        <div class="footer-last">
+            <ul class="footer_last_menu">
+                <li class="footer_last_li">Terms & Conditions</li>
+                <li class="footer_last_li">Privacy Policy</li>
+                <li class="footer_last_li">Cancellation Policy</li>
+            </ul>
+        <p class="copyright">© 2021 ISKCON Vrindavan. All rights Reserved.</p>
+        </div>
+    </div>
+  </footer>
